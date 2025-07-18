@@ -1,0 +1,267 @@
+:root {
+  --body-color: #e4e9f7;
+  --nav-color: #e9edc9;
+  --side-nav: #010718;
+  --text-color: #01161e;
+  --search-bar: #f2f2f2;
+  --search-text: #fff;
+  --hover-color: #fcbf49;
+  --bg-hero-sec: #001d3d;
+  --white-text-color: #fff;
+  --nav-text-color: #01161e;
+  --bg-cards: #adb5bd;
+  --bg-btn: #9B9B9B;
+  --bg-input: #001d3d;
+  --icon-color: #DE5839;
+}
+
+body {
+  /* height: 100vh; */
+  background-color: var(--body-color);
+}
+
+body.dark {
+  --body-color: #18191a;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  --text-color: #01161e;
+  --search-bar: #242526;
+  --search-text: #f2f2f2;
+  --white-text-color: #fff;
+  --nav-text-color: #fff;
+  --bg-cards: #6c757d;
+  --icon-color: #DE5839;
+}
+
+.main-container {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-container .container {
+   width: 80%;
+   background-color: var(--body-color);
+   display: flex;
+}
+
+.container .left-container {
+   width: 45%;
+   padding: 1rem;
+}
+
+.left-container .main-heading {
+   width: 100%;
+}
+
+.main-heading h2 {
+   font-size: 1.8rem;
+   font-weight: 510;
+   color: var(--nav-text-color);
+   margin-bottom: 1rem;
+}
+
+.main-heading p {
+   color: var(--nav-text-color);
+}
+
+.left-container .information {
+   width: 100%;
+   display: flex;
+   gap: 1.5rem;
+   margin-block: 2.5rem;
+   color: var(--nav-text-color);
+}
+
+.information .info-icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.information i {
+   font-size: 40px;
+   color: var(--icon-color);
+}
+
+.information .info-title {
+   font-size: 12px;
+   font-weight: 550;
+   margin-bottom: 12px;
+   text-transform: uppercase;
+}
+
+.information .info-para {
+   font-size: 1.1rem;
+}
+
+.container .right-container {
+   width: 55%;
+   height: 500px;
+   padding: 1rem;
+}
+
+.right-container .leave-info {
+   width: 100%;
+}
+
+.leave-info h2 {
+   font-size: 1.8rem;
+   font-weight: 510;
+   color: var(--nav-text-color);
+   margin-bottom: 1rem;
+}
+
+.leave-info p {
+   color: var(--nav-text-color);
+}
+
+.right-container form {
+   width: 100%;
+}
+
+form .name-input {
+   width: 60%;
+   margin-block: 1.5rem;
+   display: flex;
+   gap: 1rem;
+}
+
+.name-input .first-name {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.first-name label, input {
+   width: 100%;
+   color: var(--nav-text-color);
+}
+
+.first-name p , .last-name p {
+   font-size: 13px;
+   color: var(--nav-text-color);
+}
+
+.first-name label {
+   font-size: 18px;
+   font-weight: 550;
+}
+
+.first-name input, .last-name input {
+   padding: 8px 16px;
+   border: 1px solid var(--nav-text-color);
+   color: var(--nav-text-color);
+   background-color: transparent;
+}
+
+.name-input .last-name {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.last-name input {
+   width: 100%;
+}
+
+.email-input {
+   width: 60%;
+   margin-block: 1.5rem;
+}
+
+.email-input label, input {
+   width: 100%;
+   color: var(--nav-text-color);
+}
+
+.email-input label {
+   font-size: 18px;
+   font-weight: 550;
+}
+
+.email-input input {
+   padding: 8px 16px;
+   border: 1px solid var(--nav-text-color);
+   color: var(--nav-text-color);
+   background-color: transparent;
+}
+
+.message-input {
+   width: 100%;
+   margin-block: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+.message-input label, textarea {
+   width: 100%;
+   color: var(--nav-text-color);
+}
+
+.message-input label {
+   font-size: 18px;
+   font-weight: 550;
+}
+
+.message-input textarea {
+   padding: 8px 16px;
+   border: 1px solid var(--nav-text-color);
+   color: var(--nav-text-color);
+   background-color: transparent;
+}
+
+.submit-btn {
+   width: 100%;
+}
+
+.submit-btn button {
+  padding: 6px 18px;
+  color: var(--text-color);
+  background-color: var(--bg-btn);
+  margin-bottom: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  
+  &:hover {
+    background-color: var(--bg-hero-sec);
+    color: var(--white-text-color);
+    transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 1230px) {
+   .container {
+      flex-direction: column;
+      margin-top: 5rem;
+   }
+}
+
+@media (max-width: 800px) {
+   .container {
+      width: 100%;
+   }
+
+   .left-container {
+      width: 100%;
+   }
+
+   .main-heading h2 {
+      font-size: 1.5rem;
+   }
+   
+   .main-heading p {
+      width: 100%;
+   }
+
+   form .name-input, .email-input, .message-input {
+      width: 100%;
+   }
+}
