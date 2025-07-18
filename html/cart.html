@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <!-- cdn link of box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo">
+          <a href="../index.html">Shahjehan</a>
+        </span>
+        <div class="menu">
+          <div class="logoToggle">
+            <span class="logo">
+              <a href="../index.html">Bilal Khan</a>
+            </span>
+            <i class="bx bx-x sidebarClose"></i>
+          </div>
 
+          <ul class="nav-links">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="./cart.html">Shop</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+            <div class="search-field">
+              <input type="text" placeholder="search..." />
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="cart-field">
+              <i class="fa-regular fa-cart-shopping cart-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="cart-sidebar">
+      <div class="top">
+        <div class="cart-heading">
+          <p>Shopping Cart</p>
+          <i class="bx bx-x" id="sidebarClose"></i>
+        </div>
+      </div>
+      <div class="product-details">
+        <div class="product-details-left-rigth">
+          <div class="product-details-left"></div>
+          <div class="product-details-right"></div>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+        <p class="sidebar-title">Subtotal:</p>
+        <p class="sidebar-price"></p>
+      </div>
+      <div class="cart-button">
+        <button>Checkout</button>
+      </div>
+    </div>
+    <div class="cart-container">
+      <div class="left-cart-container"></div>
+      <div class="right-cart-container">
+        <h2 id="product-name"></h2>
+        <p id="product-price"></p>
+        <p>
+          Moderate and comfortable, these Peshawari Chappals are the true
+          wardrobe-essentials.
+        </p>
+        <ul>
+          <li>Genuine Leather</li>
+          <li>Soft inner sole</li>
+          <li>Soft inner sole</li>
+          <li>Handmade with love from Charsadda</li>
+        </ul>
+        <h3>Make To Order</h3>
+        <div class="add-to-cart">
+          <div class="left">
+            <button id="decrement">-</button>
+            <p id="result">0</p>
+            <button id="increment">+</button>
+          </div>
+          <div class="right">
+            <button id="cart-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/app.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

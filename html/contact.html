@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <!-- cdn link of box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo">
+          <a href="../index.html">Shahjehan</a>
+        </span>
+        <div class="menu">
+          <div class="logoToggle">
+            <span class="logo">
+              <a href="./index.html">Bilal Khan</a>
+            </span>
+            <i class="bx bx-x sidebarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../html/cart.html">Shop</a>
+            </li>
+            <li>
+              <a href="../html/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+            <div class="search-field">
+              <input type="text" placeholder="search..." />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main-container">
+      <div class="container">
+        <div class="left-container">
+          <div class="main-heading">
+            <h2>Contact Info.</h2>
+            <p>Some information that you may want to know</p>
+          </div>
+          <div class="information">
+            <div class="info-icon">
+              <i class="fa-regular fa-phone"></i>
+            </div>
+            <div>
+              <p class="info-title">Phone Number</p>
+              <p class="info-para">92 312 54 54 700</p>
+            </div>
+          </div>
+          <div class="information">
+            <div class="info-icon">
+              <i class="fa-light fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="info-title">Address</p>
+              <p class="info-para">1-Mardan Road Charsadda</p>
+            </div>
+          </div>
+          <div class="information">
+            <div class="info-icon">
+              <i class="fa-thin fa-envelope"></i>
+            </div>
+            <div>
+              <p class="info-title">Email</p>
+              <p class="info-para">hello@shahjehanchappal.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-container">
+         <div class="leave-info">
+            <h2>Leave Your Message</h2>
+            <p>Feel free to contact with us by using the form below</p>
+         </div>
+         <form action="">
+            <div class="name-input">
+               <div class="first-name">
+                  <label for="first-name">Name</label>
+                  <input type="text" name="first-name" id="first-name">
+                  <p>First</p>
+               </div>
+               <div class="last-name">
+                  <input type="text" name="last-name" id="last-name">
+                  <p>Last</p>
+               </div>
+            </div>
+            <div class="email-input">
+               <label for="email">Email</label>
+               <input type="email" name="email" id="email">
+            </div>
+            <div class="message-input">
+               <label for="message">Comment or Message</label>
+               <textarea name="message" id="message" rows="6"></textarea>
+            </div>
+            <div class="submit-btn">
+               <button>Submit</button>
+            </div>
+         </form>
+        </div>
+      </div>
+    </main>
+    <script src="../js/app.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>
